@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Poker.Pages.LeaderboardPage"
+             Title="Leaderboard">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="DarkGreen" Padding="20">
+            <ActivityIndicator x:Name="activityIndicator" IsRunning="true" IsVisible="false"/>
+            <StackLayout BackgroundColor="Green" Orientation="Horizontal" Padding="10">
+                <Label Text="Name" FontSize="18" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                <Label Text="Score" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <ListView x:Name="LeaderboardListView" ItemTapped="LeaderboardListView_ItemTapped" BackgroundColor="Green">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Label Text="{Binding Name}" TextColor="Black" FontSize="18" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="{Binding Score}" TextColor="Black" FontSize="18"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Refresh" HorizontalOptions="StartAndExpand" Clicked="Refresh_Button_Clicked"/>
+                <Button Text="Generate Test Data" Clicked="Generate_Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

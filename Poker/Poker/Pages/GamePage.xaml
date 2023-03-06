@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Poker"
+             x:Class="Poker.Pages.GamePage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="DarkGreen" Spacing="60">
+            <StackLayout Margin="25,0,25,0">
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="QuitButton" Text="Quit" HorizontalOptions="StartAndExpand" Clicked="QuitButton_Clicked"/>
+                    <Label x:Name="OpponentMoneyLabel" Text="Opponent: $100" VerticalOptions="Center" FontSize="18" TextColor="Black"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image x:Name="OppPocketCardImage1" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                    <Image x:Name="OppPocketCardImage2" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image x:Name="CommunityCardImage1" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                    <Image x:Name="CommunityCardImage2" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                    <Image x:Name="CommunityCardImage3" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                    <Image x:Name="CommunityCardImage4" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                    <Image x:Name="CommunityCardImage5" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                </StackLayout>
+                <Label x:Name="PotMoneyLabel" Text="Pot: $50" HorizontalOptions="Center" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image x:Name="PocketCardImage1" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                    <Image x:Name="PocketCardImage2" Source="{local:ImageResource Poker.Images.back_of_card_blue.png}" HeightRequest="100" />
+                </StackLayout>
+                <Label x:Name="CurrentStateLabel" Text="Waiting for opponent..." HorizontalOptions="Center" FontSize="18" TextColor="Black"/>
+                <ActivityIndicator x:Name="activityIndicator" IsRunning="true" IsVisible="false"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="25,0,25,0">
+                        <Entry x:Name="BetAmountEntry" Placeholder="Bet Amount:" HorizontalOptions="StartAndExpand" FontSize="18" TextColor="Black"/>
+                        <Label x:Name="PlayerMoneyLabel" Text="You: $100" VerticalOptions="Center" FontSize="18" TextColor="Black"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                        <Button x:Name="BetButton" Text="Bet" Clicked="BetButton_Clicked"/>
+                        <Button x:Name="CheckButton" Text="Check" Clicked="CheckButton_Clicked"/>
+                        <Button x:Name="FoldButton" Text="Fold" Clicked="FoldButton_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

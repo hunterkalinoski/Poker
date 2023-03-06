@@ -1,0 +1,147 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\10_of_clubs.png" />
+    <None Remove="Images\10_of_diamonds.png" />
+    <None Remove="Images\10_of_hearts.png" />
+    <None Remove="Images\10_of_spades.png" />
+    <None Remove="Images\2_of_clubs.png" />
+    <None Remove="Images\2_of_diamonds.png" />
+    <None Remove="Images\2_of_hearts.png" />
+    <None Remove="Images\2_of_spades.png" />
+    <None Remove="Images\3_of_clubs.png" />
+    <None Remove="Images\3_of_diamonds.png" />
+    <None Remove="Images\3_of_hearts.png" />
+    <None Remove="Images\3_of_spades.png" />
+    <None Remove="Images\4_of_clubs.png" />
+    <None Remove="Images\4_of_diamonds.png" />
+    <None Remove="Images\4_of_hearts.png" />
+    <None Remove="Images\4_of_spades.png" />
+    <None Remove="Images\5_of_clubs.png" />
+    <None Remove="Images\5_of_diamonds.png" />
+    <None Remove="Images\5_of_hearts.png" />
+    <None Remove="Images\5_of_spades.png" />
+    <None Remove="Images\6_of_clubs.png" />
+    <None Remove="Images\6_of_diamonds.png" />
+    <None Remove="Images\6_of_hearts.png" />
+    <None Remove="Images\6_of_spades.png" />
+    <None Remove="Images\7_of_clubs.png" />
+    <None Remove="Images\7_of_diamonds.png" />
+    <None Remove="Images\7_of_hearts.png" />
+    <None Remove="Images\7_of_spades.png" />
+    <None Remove="Images\8_of_clubs.png" />
+    <None Remove="Images\8_of_diamonds.png" />
+    <None Remove="Images\8_of_hearts.png" />
+    <None Remove="Images\8_of_spades.png" />
+    <None Remove="Images\9_of_clubs.png" />
+    <None Remove="Images\9_of_diamonds.png" />
+    <None Remove="Images\9_of_hearts.png" />
+    <None Remove="Images\9_of_spades.png" />
+    <None Remove="Images\ace_of_clubs.png" />
+    <None Remove="Images\ace_of_diamonds.png" />
+    <None Remove="Images\ace_of_hearts.png" />
+    <None Remove="Images\ace_of_spades.png" />
+    <None Remove="Images\back_of_card_blue.png" />
+    <None Remove="Images\black_joker.png" />
+    <None Remove="Images\jack_of_clubs.png" />
+    <None Remove="Images\jack_of_diamonds.png" />
+    <None Remove="Images\jack_of_hearts.png" />
+    <None Remove="Images\jack_of_spades.png" />
+    <None Remove="Images\king_of_clubs.png" />
+    <None Remove="Images\king_of_diamonds.png" />
+    <None Remove="Images\king_of_hearts.png" />
+    <None Remove="Images\king_of_spades.png" />
+    <None Remove="Images\queen_of_clubs.png" />
+    <None Remove="Images\queen_of_diamonds.png" />
+    <None Remove="Images\queen_of_hearts.png" />
+    <None Remove="Images\queen_of_spades.png" />
+    <None Remove="Images\red_joker.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\10_of_clubs.png" />
+    <EmbeddedResource Include="Images\10_of_diamonds.png" />
+    <EmbeddedResource Include="Images\10_of_hearts.png" />
+    <EmbeddedResource Include="Images\10_of_spades.png" />
+    <EmbeddedResource Include="Images\2_of_clubs.png" />
+    <EmbeddedResource Include="Images\2_of_diamonds.png" />
+    <EmbeddedResource Include="Images\2_of_hearts.png" />
+    <EmbeddedResource Include="Images\2_of_spades.png" />
+    <EmbeddedResource Include="Images\3_of_clubs.png" />
+    <EmbeddedResource Include="Images\3_of_diamonds.png" />
+    <EmbeddedResource Include="Images\3_of_hearts.png" />
+    <EmbeddedResource Include="Images\3_of_spades.png" />
+    <EmbeddedResource Include="Images\4_of_clubs.png" />
+    <EmbeddedResource Include="Images\4_of_diamonds.png" />
+    <EmbeddedResource Include="Images\4_of_hearts.png" />
+    <EmbeddedResource Include="Images\4_of_spades.png" />
+    <EmbeddedResource Include="Images\5_of_clubs.png" />
+    <EmbeddedResource Include="Images\5_of_diamonds.png" />
+    <EmbeddedResource Include="Images\5_of_hearts.png" />
+    <EmbeddedResource Include="Images\5_of_spades.png" />
+    <EmbeddedResource Include="Images\6_of_clubs.png" />
+    <EmbeddedResource Include="Images\6_of_diamonds.png" />
+    <EmbeddedResource Include="Images\6_of_hearts.png" />
+    <EmbeddedResource Include="Images\6_of_spades.png" />
+    <EmbeddedResource Include="Images\7_of_clubs.png" />
+    <EmbeddedResource Include="Images\7_of_diamonds.png" />
+    <EmbeddedResource Include="Images\7_of_hearts.png" />
+    <EmbeddedResource Include="Images\7_of_spades.png" />
+    <EmbeddedResource Include="Images\8_of_clubs.png" />
+    <EmbeddedResource Include="Images\8_of_diamonds.png" />
+    <EmbeddedResource Include="Images\8_of_hearts.png" />
+    <EmbeddedResource Include="Images\8_of_spades.png" />
+    <EmbeddedResource Include="Images\9_of_clubs.png" />
+    <EmbeddedResource Include="Images\9_of_diamonds.png" />
+    <EmbeddedResource Include="Images\9_of_hearts.png" />
+    <EmbeddedResource Include="Images\9_of_spades.png" />
+    <EmbeddedResource Include="Images\ace_of_clubs.png" />
+    <EmbeddedResource Include="Images\ace_of_diamonds.png" />
+    <EmbeddedResource Include="Images\ace_of_hearts.png" />
+    <EmbeddedResource Include="Images\ace_of_spades.png" />
+    <EmbeddedResource Include="Images\back_of_card_blue.png" />
+    <EmbeddedResource Include="Images\black_joker.png" />
+    <EmbeddedResource Include="Images\jack_of_clubs.png" />
+    <EmbeddedResource Include="Images\jack_of_diamonds.png" />
+    <EmbeddedResource Include="Images\jack_of_hearts.png" />
+    <EmbeddedResource Include="Images\jack_of_spades.png" />
+    <EmbeddedResource Include="Images\king_of_clubs.png" />
+    <EmbeddedResource Include="Images\king_of_diamonds.png" />
+    <EmbeddedResource Include="Images\king_of_hearts.png" />
+    <EmbeddedResource Include="Images\king_of_spades.png" />
+    <EmbeddedResource Include="Images\queen_of_clubs.png" />
+    <EmbeddedResource Include="Images\queen_of_diamonds.png" />
+    <EmbeddedResource Include="Images\queen_of_hearts.png" />
+    <EmbeddedResource Include="Images\queen_of_spades.png" />
+    <EmbeddedResource Include="Images\red_joker.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\DetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\GamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\LeaderboardPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Poker.Pages.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="DarkGreen" Spacing="30" Padding="50">
+        <Label Text="Poker" FontSize="36" TextColor="Black" HorizontalOptions="Center"/>
+        <Entry x:Name="NameEntry" Placeholder="Name:" FontSize="24" HorizontalOptions="Center" WidthRequest="200"/>
+        <Button Text="Play" FontSize="24" Clicked="Play_Button_Clicked" HorizontalOptions="Center" Padding="15"/>
+        <Button Text="Leaderboard" FontSize="24" Clicked="Leaderboard_Button_Clicked" HorizontalOptions="Center" Padding="15"/>
+        <ActivityIndicator x:Name="ActivityIndicator" IsVisible="false" IsRunning="true"/>
+        <Label x:Name="ConnectionStatusLabel" FontSize="18" IsVisible="false" HorizontalOptions="Center"/>
+        <Button x:Name="CancelButton" Text="Cancel" Clicked="Cancel_Button_Clicked" IsVisible="false" HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
